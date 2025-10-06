@@ -6,5 +6,10 @@ public class WordCensor {
         // TODO: Replace each banned word with exactly ***: dang, nuts, oops, yikes
         // TODO: Print the result prefixed with: Censored:
         // NOTE: Tests require exactly three asterisks (no ****) for every replacement
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Input: ");
+        String line =  scan.nextLine();
+        line = line.replaceAll("(?i)dang|nuts|oops|yikes", "***");
+        System.out.print("Censored: " + line);
     }
 }
