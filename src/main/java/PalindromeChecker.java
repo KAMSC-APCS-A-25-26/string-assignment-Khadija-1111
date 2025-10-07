@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class PalindromeChecker {
     public static void main(String[] args) {
-        // TODO: Create a Scannner and read a full line from the user with nextLine().
+        // TODO: Create a Scanner and read a full line from the user with nextLine().
         //       Keep the original input string so you can print it in the final message.
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a string: ");
