@@ -14,6 +14,6 @@ public class WordCensor {
         line = line.replace("nuts", "***");
         line = line.replace("oops", "***");
         line = line.replace("yikes", "***");
-        System.out.print("Censored: " + line);
+        System.out.print("Output: Censored: " + line);
     }
 }
