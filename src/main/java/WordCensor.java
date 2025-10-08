@@ -9,7 +9,11 @@ public class WordCensor {
         Scanner scan = new Scanner(System.in);
         System.out.print("Input: ");
         String line =  scan.nextLine();
-        line = line.replaceAll("(?i)\\bdang|nuts|oops|yikes", "***");
+        line = line.toLowerCase();
+        line = line.replace("dang", "***");
+        line = line.replace("nuts", "***");
+        line = line.replace("oops", "***");
+        line = line.replace("yikes", "***");
         System.out.print("Censored: " + line);
     }
 }
